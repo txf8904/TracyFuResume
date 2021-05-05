@@ -63,6 +63,12 @@ body
     margin: 0px 40px;
 }
 
+.left h5
+{
+    color: #3E4550;
+    margin: 5px;
+}
+
 .left p
 {
     color: #3E4550;
