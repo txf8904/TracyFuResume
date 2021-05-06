@@ -82,6 +82,12 @@ body
     margin: 0px 60px;
 }
 
+.left img
+{
+    width: 80%;
+    margin: 10px 10%;
+}
+
 .right
 {
     width: 25%;
