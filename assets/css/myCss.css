@@ -93,6 +93,7 @@ body
     width: 25%;
     right:0;
     background-color: #a6abaf;
+    padding: 5px;
 }
 
 .right h2
@@ -122,6 +123,65 @@ body
 {
     color: #3E4550;
     margin: 0px 40px;
+}
+
+a:link
+{
+    color: #3E4550;
+}
+
+a:hover
+{
+    color: #0C54A0;
+}
+
+a:visited
+{
+    color: black;
+}
+
+.nav
+{
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: #3E4550;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+}
+
+.nav ul
+{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav li
+{
+    float: left;
+}
+
+.nav li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.nav li a:hover
+{
+    background-color: #0C54A0;
+}
+
+iframe
+{
+    margin: 10px 40px;
 }
 
 
