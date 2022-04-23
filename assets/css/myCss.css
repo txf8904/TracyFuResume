@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    /*box-sizing: border-box;*/
 }
+
 body
 {
-    background-color: #CFD1D2;
-    font-family: 'Source Sans Pro', sans-serif;
+    background-color: White;
+    font-family: 'League Spartan', sans-serif;
 }
 
 #wrapper
@@ -14,169 +16,163 @@ body
     width: 100%;
 }
 
+/* Header Start*/
+
 .header
 {
-    background-color: #3E4550;
-    height: 100px;
-    border-bottom: 3px solid #0C54A0;
+    background-color: #219E23;
+    overflow: hidden;
+    padding: 13px 0px;
 }
 
 .header h1
 {
-    color: #FBFBFB;
-    text-align: left;
-    padding: 15px;
+    color: white;
+    float: left;
+    margin: 0px 50px;
 }
 
-.header h3
+.header-right
 {
-    color: #FBFBFB;
+    float: right;
+    padding-top: 5px;
+}
+
+.header-right a
+{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 33px 22px;
     text-align: center;
-    text-align: left;
-    padding-left: 20px;
+    color: White;
+    font-weight: bold;
 }
 
-.left
+.header-right a:hover
 {
-    width: 75%;
+    background-color: #E0F3E0;
+    color:black;
 }
 
-.left h2
+.header-right a.active
 {
-    color: #3E4550;
-    margin: 20px;
-    border-bottom: 1.5px solid #0C54A0;
-    font-size: 1.6em;
+    text-decoration: underline solid 3px #B3FF5A;
+}
+/* Header End*/
+
+
+
+/* Intro Start*/
+.intro
+{
+    position: relative;
+    background-color: white;
+    height: 600px;
 }
 
-.left h3
+.center
 {
-    color: #3E4550;
-    margin: 0px 40px;
-    font-size: 1.4em;
-    font-style: bold;
+    position:absolute;
+    top: 20%;
+    left: 15%;
 }
 
-.left h4
+.center h1
 {
-    color: #3E4550;
-    margin: 0px 40px;
+    font-size: 4em;
 }
 
-.left h5
+.center h2
 {
-    color: #3E4550;
-    margin: 5px;
+    font-size: 3.5em;
+    color:#EE5A26;
+    padding: 35px 0px;
 }
 
-.left p
+.center h3
 {
-    color: #3E4550;
-    margin: 0px 40px;
-    font-size: 1.2em;
+    padding: 15px 0;
+    font-size: 3em;
+    color: #219E23;
 }
+/* Intro End*/
 
-.left li
+/* Worktab Start*/
+.worktab
 {
-    color: #3E4550;
-    margin: 0px 60px;
-}
-
-.left img
-{
-    width: 80%;
-    margin: 10px 10%;
-}
-
-.right
-{
+    background-color:#219E23;
+    color:white;
+    float: left;
+    border: none;
+    border-left: 1px solid #B3FF5A;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
     width: 25%;
-    right:0;
-    background-color: #a6abaf;
-    padding: 5px;
+    font-weight: bold;
 }
 
-.right h2
+.worktab:hover
 {
-    color: #3E4550;
-    margin: 20px;
-    border-bottom: 1.5px solid #0C54A0;
-    font-size: 1.5em;
-}
-
-.right h3
-{
-    color: #3E4550;
-    margin: 10px 20px 0px;
-    font-size: 1.1em;
-    font-style: bold;
-}
-
-.right p
-{
-    color: #3E4550;
-    margin: 0px 20px;
-    font-size: 1em;
-}
-
-.right li
-{
-    color: #3E4550;
-    margin: 0px 40px;
-}
-
-a:link
-{
-    color: #3E4550;
-}
-
-a:hover
-{
-    color: #0C54A0;
-}
-
-a:visited
-{
+    background-color: #E0F3E0;
     color: black;
 }
 
-.nav
+.worktabcontent
 {
-    position: -webkit-sticky;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    background-color: #3E4550;
-    color: white;
-    font-weight: bold;
-    display: inline-block;
-    font-size: 1em;
-    margin: 0;
+    display:none;
+    color:black;
+    padding: 100px;
+    height: 600px;
 }
 
-.nav ul
+.content-left
 {
-    list-style-type: none;
-    overflow: hidden;
+    position:absolute;
+    left: 65%;
+    margin-top: 200px;
 }
 
-.nav li
+.content-right
 {
-    float: left;
+    position:absolute;
+    right: 65%;
+    margin-top: 200px;
 }
 
-.nav li a 
+.content-left h1, .content-right h1
 {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
+    font-size: 50px;
+    margin: 15px;
 }
 
-.nav li a:hover
+.content-left p, .content-right p
 {
-    background-color: #0C54A0;
+    font-size: 25px;
+    margin: 15px;
+}
+/* Worktab End*/
+
+.about
+{
+    height: 400px;
+}
+
+.about h2
+{
+    margin-top: 50px;
+    margin-left: 15%;
+    font-size: 3em;
+    color:#219E23;
+    text-decoration: underline dashed 2px #B3FF5A;
+}
+
+.about p
+{
+    margin-left: 15%;
+    font-size: 1.5em;
+    padding: 30px;
 }
 
 iframe
@@ -188,7 +184,32 @@ iframe
 .footer
 {
     margin-top: 10px;;
-    border-top: 3px solid #0C54A0;
+    border-top: 3px solid #219E23;
     text-align: center;
     font-size: 0.9em;
+    padding: 13px;    
+}
+
+#work1
+{
+    background-color: #324336;
+    color: white;
+}
+
+#work2
+{
+    background-color: #6FA2A0;
+    color:white;
+}
+
+#work3
+{
+    background-color: #273B46;
+    color: white;
+}
+
+#work4
+{
+    background-color: #8799A6;
+    color:white;
 }
