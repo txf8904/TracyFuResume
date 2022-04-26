@@ -127,6 +127,35 @@ body
     height: 600px;
 }
 
+.img-left
+{
+    float: left;
+    width: 65%;
+    margin: 20px;
+}
+
+.img-left img
+{
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+}
+
+.img-right
+{
+    float: right;
+    width: 65%;
+    margin: 20px;
+}
+
+.img-right img
+{
+    float: right;
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+}
+
 .content-left
 {
     position:absolute;
@@ -152,11 +181,26 @@ body
     font-size: 25px;
     margin: 15px;
 }
+
+.content-left a, .content-right a
+{
+    font-size: 18px;
+    margin: 15px;
+    color: white;
+}
+
+.content-left a:hover, .content-right a:hover
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
 /* Worktab End*/
 
 .about
 {
-    height: 400px;
+    height: 300px;
 }
 
 .about h2
@@ -165,7 +209,6 @@ body
     margin-left: 15%;
     font-size: 3em;
     color:#219E23;
-    text-decoration: underline dashed 2px #B3FF5A;
 }
 
 .about p
@@ -173,6 +216,11 @@ body
     margin-left: 15%;
     font-size: 1.5em;
     padding: 30px;
+}
+
+.about a
+{
+    color:#EE5A26;
 }
 
 iframe
@@ -212,4 +260,71 @@ iframe
 {
     background-color: #8799A6;
     color:white;
+}
+
+
+/*Work page detail*/
+.detail-wrap
+{
+    margin: 50px;
+}
+
+.detail-wrap h1
+{
+    font-size: 40px;
+    color:#219E23;
+}
+
+.detail-wrap h2
+{
+    font-size: 30px;
+    padding: 20px 10px;
+    color:#219E23;
+    text-decoration: underline 2px solid #273B46;
+}
+
+.detail-wrap h3
+{
+    padding: 10px;
+}
+
+.detail-wrap h4
+{
+    font-size: 20px;
+    padding: 4px 20px;
+    font-weight: bold;
+}
+
+.detail-wrap p
+{
+    padding: 5px 60px 15px 60px;
+    font-size: 20px;
+}
+
+.detail-wrap a
+{
+    padding:  5px 60px 15px 60px;
+    font-size: 20px;
+    color: #219E23;
+}
+
+.detail-wrap a:hover
+{
+    font-size: 22px;
+    font-style: bold;
+}
+
+
+
+.detail-wrap img
+{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-wrap span
+{
+    color:#219E23;
 }
