@@ -264,7 +264,7 @@ iframe
 
 
 /*Work page detail*/
-.detail-wrap
+.detail-wrap, .about-wrap
 {
     margin: 50px;
 }
@@ -327,4 +327,46 @@ iframe
 .detail-wrap span
 {
     color:#219E23;
+}
+
+.about-wrapLeft
+{
+    width: 60%;
+    float: left;
+}
+
+.about-wrapRight
+{
+    float: right;
+    width: 40%;
+}
+.about-wrap h1
+{
+    font-size: 32px;
+    color:#219E23;
+    padding: 12px;
+}
+
+.about-wrap h2
+{
+    font-size: 28px;
+    color:#EE5A26;
+    padding: 12px;
+}
+
+.about-wrap h3
+{
+    font-size: 25px;
+    padding: 12px;
+}
+
+.about-wrap span
+{
+    color:#EE5A26;
+}
+
+.about-wrap img
+{
+    float: right;
+    width: 100%;
 }
