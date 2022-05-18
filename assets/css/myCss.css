@@ -295,6 +295,13 @@ iframe
     font-weight: bold;
 }
 
+.detail-wrap h5
+{
+    font-size: 30px;
+    color:#EE5A26;
+    margin-top: 10px;
+}
+
 .detail-wrap p
 {
     padding: 5px 60px 15px 60px;
