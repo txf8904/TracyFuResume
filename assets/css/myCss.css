@@ -6,7 +6,7 @@
 
 body
 {
-    background-color: White;
+    background-color: #F0F0F0;
     font-family: 'League Spartan', sans-serif;
 }
 
@@ -20,22 +20,25 @@ body
 
 .header
 {
-    background-color: #219E23;
+    background-color: white;
     overflow: hidden;
-    padding: 13px 0px;
+    padding: 0px 20px;
+    height: 90px;
+    border-bottom: 2px solid #219E23;
 }
 
 .header h1
 {
-    color: white;
+    color: black;
     float: left;
-    margin: 0px 50px;
+    margin: 35px 50px;
 }
 
 .header-right
 {
     float: right;
     padding-top: 5px;
+    margin: 35px;
 }
 
 .header-right a
@@ -44,20 +47,20 @@ body
     text-decoration: none;
     padding: 33px 22px;
     text-align: center;
-    color: White;
+    color: black;
     font-weight: bold;
 }
 
 .header-right a:hover
 {
-    background-color: #E0F3E0;
-    color:black;
+    color:#219E23;
 }
 
+/*
 .header-right a.active
 {
-    text-decoration: underline solid 3px #B3FF5A;
-}
+    text-decoration: underline solid 3px #EE5A26;
+}*/
 /* Header End*/
 
 
@@ -68,6 +71,7 @@ body
     position: relative;
     background-color: white;
     height: 600px;
+    background-image: url("index_spot.svg");
 }
 
 .center
@@ -194,13 +198,86 @@ body
     font-weight: bold;
     font-size: 20px;
 }
-
-
 /* Worktab End*/
+
+/*project card start*/
+.card
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    height: 300px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.card img
+{
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin-right: 45px;
+}
+
+.card h1
+{
+    margin-bottom: 10px;
+}
+
+.card h5
+{
+    color:#219E23;
+    padding: 25px;
+    font-size: 1.1em;
+}
+
+.card p
+{
+    margin-right: 45px;
+    color: gray;
+    padding: 8px;
+    font-size: 1.1em;
+}
+
+.card button
+{
+    margin: 50px;
+    padding: 9px 18px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+
+.card button:hover
+{
+    background-color: #219E23;
+}
+
+.card a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.card a:visited
+{
+    color: white;
+    
+}
+
+
+/*project card end*/
+
 
 .about
 {
     height: 300px;
+    margin-top: 60px;
+    background-color: #F9F9F9;
+    padding: 30px;
 }
 
 .about h2
@@ -231,11 +308,12 @@ iframe
 
 .footer
 {
-    margin-top: 10px;;
+    margin-top: 0px;
     border-top: 3px solid #219E23;
     text-align: center;
     font-size: 0.9em;
-    padding: 13px;    
+    padding: 13px;   
+    background-image: url("index_spot.svg"); 
 }
 
 #work1
