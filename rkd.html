@@ -23,43 +23,156 @@
         </div>
     </div>
 
+    <div class="bg">
+        <img src="assets/RKDImg/overview4.jpg">
+    </div>
+
     <div class="detail-wrap">
+
+        
         <h1>RKD Game</h1>
-        <h3>
-            Game Review APP | UX/UI Designer | Course Project | Figma
-        </h3>
+        <p>
+            RKD Game is a game review app that provides a brand new experience to arcade gamers: <br>
+            1. Expert game reviews on thousands of arcade games.<br>
+            2. Found out what the hottest game the world is playing.<br>
+            3. Explore the new game based on the game played.<br>
+            4. Communication between gamers through the gaming community.
+        </p>
 
-        <h2>Project Overview</h2>
+        
+
+        <div class="row">
+            <div class="column">
+                <h5><u>Scope</u></h5>
+                <p>
+                    Problem Framing<br>
+                    Concept development<br>
+                    Validation
+                </p>
+            </div>
+            <div class="column">
+                <h5><u>Client</u></h5>
+                <p>
+                    Course Project
+                </p>
+            </div>
+            <div class="column">
+                <h5><u>Duration</u></h5>
+                <p>November 2021 - February 2022</p>
+            </div>
+            <div class="column">
+                <h5><u>My Role</u></h5>
+                <p>
+                    UI/UX design<br>
+                    User research<br>
+                    Prototype<br>
+                    Service design
+                </p>
+            </div>
+        </div>
+        
+
+        <h2>What's the problem?</h2>
+        <p>
+            Arcade gamers often can't find people who have similar interests in the real life. 
+            Unlike online games, they are able to communicate with each other through voice chat that 
+            builds into the game. The arcade games are more like offline, face-to-face games. 
+            Therefore, arcade gamers are looking for a platform that can provide information and news 
+            about arcade games and find their own unique gamer community.
+        </p>
+
+        <h2>The Challenge</h2>
             <p>
-                RKD Game is a game review app that provides a series of reviews about the classic and 
-                newest arcade games and provides the gaming community for gamers. The app is geared toward 
-                people who have an interest in arcade games and looking for friends to play together with. 
+                Designing a new application based on game reviews that help arcade gamers to 
+                find their own community online.
             </p>
-            <img src="assets/RKDImg/Overview.png">
 
-        <h2>Understanding the user</h2>
-            <h4>Problem:</h4>
+        <h2>Outcome</h2>
+        <h5>
+            <ul>
+                <li>90% of users found it useful</li>
+            </ul>
+        </h5>
+
+    </div>
+
+    <div class="white">
+        <div class="detail-wrap">
+            <h2>Persona</h2>
+            <h6>
+                Interviewing 10 people at the age from 18-35 who spend 2 hours on game daily,
+                I identified 2 personas with different consumption habits and barries and
+                examining their pain points.
+            </h6>
+            
+            <div class="slidshow">
+                <div class="mySlides fade">
+                    <img src="assets/RKDImg/Persona1.png" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <img src="assets/RKDImg/Persona2.png" style="width:100%">
+                    
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+
+            <h2>Key Finding</h2>
+            <h3>User Needs</h3>
             <p>
-                Arcade gamers often can't find people who have similar interests in the real life. 
-                Unlike online games, they are able to community with each other through voice chat that 
-                builds into the game. The arcade games are more like offline, face-to-face games. 
-                Therefore, arcade gamers are looking for a platform that can provide information and news 
-                about arcade games and find their own unique gamer community.
+
             </p>
 
-            <h4>Solution:</h4>
+            <h3>User Goals</h3>
             <p>
-                The application provides people with information about classic and newest arcade games, 
-                so no matter whether the user is a new arcade gamer or a fanatic arcade gamer,  
-                you can find your game here.
-                Moreover, there will never be alone because there is always a community for you to share your fun 
-                with each other.
+
             </p>
 
-            <h4>Persona:</h4>
-            <p>Lewis is a 3rd-year college student who needs updated on the newest game every week because 
-                he has a heavy schedule for his college.</p>
-            <img src="assets/RKDImg/persona.png" alt="Lewis Persona">
+        </div>
+    </div>
+
+    <div class="red">
+        <div class="detail-wrap">
+            <h2>Opportunity</h2>
+            <h6>
+                How might we create an online arcade gaming community with engaging game reviews 
+                that can help connect gamers all over the world?
+            </h6>
+        </div>
+    </div>
+
+
+    <div class="detail-wrap">
+        <h2>The Solution</h2>
+        <img src="assets/RKDImg/wireframes.gif">
+
+        <h2>Live Demo</h2>
+    </div>
+
+    <div class="white">
+        <div class="detail-wrap">
+            <h2>Refining the design</h2>
+        </div>
+    </div>
+
+
+    <div class="detail-wrap">
+        <h2>Final Thoughts</h2>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Last Updated: July 2022</p>
+    </div>
+   
+
+
+
+
+        <!-- 
 
         <h2>The Design</h2>
             <h4>Wireframes:</h4>
@@ -154,8 +267,37 @@
                 <br><br>
                 It is an exciting and confusing process, but I eventually get over the difficulty and 
                 call it a success. 
-            </p>
-    </div>
+            </p>-->
     
 </body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
 </html>

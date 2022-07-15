@@ -101,105 +101,6 @@ body
 }
 /* Intro End*/
 
-/* Worktab Start*/
-.worktab
-{
-    background-color:#219E23;
-    color:white;
-    float: left;
-    border: none;
-    border-left: 1px solid #B3FF5A;
-    outline: none;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 18px;
-    width: 25%;
-    font-weight: bold;
-}
-
-.worktab:hover
-{
-    background-color: #E0F3E0;
-    color: black;
-}
-
-.worktabcontent
-{
-    display:none;
-    color:black;
-    padding: 100px;
-    height: 600px;
-}
-
-.img-left
-{
-    float: left;
-    width: 65%;
-    margin: 20px;
-}
-
-.img-left img
-{
-    width: 80%;
-    max-width: 1000px;
-    height: 600px;
-}
-
-.img-right
-{
-    float: right;
-    width: 65%;
-    margin: 20px;
-}
-
-.img-right img
-{
-    float: right;
-    width: 80%;
-    max-width: 1000px;
-    height: 600px;
-}
-
-.content-left
-{
-    position:absolute;
-    left: 65%;
-    margin-top: 200px;
-}
-
-.content-right
-{
-    position:absolute;
-    right: 65%;
-    margin-top: 200px;
-}
-
-.content-left h1, .content-right h1
-{
-    font-size: 50px;
-    margin: 15px;
-}
-
-.content-left p, .content-right p
-{
-    font-size: 25px;
-    margin: 15px;
-}
-
-.content-left a, .content-right a
-{
-    font-size: 18px;
-    margin: 15px;
-    color: white;
-}
-
-.content-left a:hover, .content-right a:hover
-{
-    font-weight: bold;
-    font-size: 20px;
-}
-/* Worktab End*/
-
 /*project card start*/
 .card
 {
@@ -316,30 +217,6 @@ iframe
     background-image: url("index_spot.svg"); 
 }
 
-#work1
-{
-    background-color: #324336;
-    color: white;
-}
-
-#work2
-{
-    background-color: #6FA2A0;
-    color:white;
-}
-
-#work3
-{
-    background-color: #273B46;
-    color: white;
-}
-
-#work4
-{
-    background-color: #8799A6;
-    color:white;
-}
-
 
 /*Work page detail*/
 .detail-wrap, .about-wrap
@@ -350,20 +227,19 @@ iframe
 .detail-wrap h1
 {
     font-size: 40px;
-    color:#219E23;
 }
 
 .detail-wrap h2
 {
-    font-size: 30px;
-    padding: 20px 10px;
-    color:#219E23;
-    text-decoration: underline 2px solid #273B46;
+    font-size: 25px;
+    margin: 30px 0px;
+    padding-top: 35px;
 }
 
 .detail-wrap h3
 {
-    padding: 10px;
+    margin-top: -27px;
+    color: #EE5A26;
 }
 
 .detail-wrap h4
@@ -375,28 +251,24 @@ iframe
 
 .detail-wrap h5
 {
-    font-size: 30px;
-    color:#EE5A26;
+    font-size: 22px;
+    color:#219E23;
     margin-top: 10px;
 }
 
-.detail-wrap p
+.detail-wrap p, .detail-wrap h6
 {
-    padding: 5px 60px 15px 60px;
-    font-size: 20px;
-}
-
-.detail-wrap a
-{
-    padding:  5px 60px 15px 60px;
-    font-size: 20px;
-    color: #219E23;
-}
-
-.detail-wrap a:hover
-{
+    width: 75%;
+    margin: 30px 0px;
     font-size: 22px;
-    font-style: bold;
+    line-height: 25px;
+    color: #4F4F4F;
+}
+
+.detail-wrap h6
+{
+    width:auto;
+    font-weight: normal;
 }
 
 
@@ -413,6 +285,18 @@ iframe
 {
     color:#219E23;
 }
+
+.detail-wrap li
+{
+    width: 75%;
+    font-size: 22px;
+    line-height: 25px;
+    margin-left: 15px;
+}
+
+
+
+
 
 .about-wrapLeft
 {
@@ -455,3 +339,243 @@ iframe
     float: right;
     width: 100%;
 }
+
+
+.bg
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.row
+{
+    display: flex;
+}
+
+.column
+{
+    float: left;
+    flex: 25%;
+    padding: 10px;
+    margin-bottom: 50px;
+    height: 200px;
+    border-top: 1px solid #219E23;
+    border-bottom: 1px solid #219E23;
+}
+
+.column h5
+{
+    color: black;
+    font-size: 20px;
+    margin: 13px 0px;
+}
+
+.column p
+{
+    color: #4F4F4F;
+    font-size: 18px;
+    margin: 0;
+}
+
+.white
+{
+    background-color: white;
+    margin: 0;
+}
+
+.red
+{
+    background-color: #EE5A26;
+    height: 280px;
+}
+
+.red h2
+{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.red h6
+{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    line-height: 45px;
+    width: 85%;
+    margin: auto 50px;
+}
+
+
+/*slideshow*/
+.slidshow
+{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next
+{
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 8px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    background-color: black;
+}
+
+.next 
+{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.prev:hover, .next:hover 
+{
+    color: white;
+    background-color: #219E23;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+/* Worktab Start*/
+.worktab
+{
+    background-color:#219E23;
+    color:white;
+    float: left;
+    border: none;
+    border-left: 1px solid #B3FF5A;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    width: 25%;
+    font-weight: bold;
+}
+
+.worktab:hover
+{
+    background-color: #E0F3E0;
+    color: black;
+}
+
+.worktabcontent
+{
+    display:none;
+    color:black;
+    padding: 100px;
+    height: 600px;
+}
+
+.img-left
+{
+    float: left;
+    width: 65%;
+    margin: 20px;
+}
+
+.img-left img
+{
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+}
+
+.img-right
+{
+    float: right;
+    width: 65%;
+    margin: 20px;
+}
+
+.img-right img
+{
+    float: right;
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+}
+
+.content-left
+{
+    position:absolute;
+    left: 65%;
+    margin-top: 200px;
+}
+
+.content-right
+{
+    position:absolute;
+    right: 65%;
+    margin-top: 200px;
+}
+
+.content-left h1, .content-right h1
+{
+    font-size: 50px;
+    margin: 15px;
+}
+
+.content-left p, .content-right p
+{
+    font-size: 25px;
+    margin: 15px;
+}
+
+.content-left a, .content-right a
+{
+    font-size: 18px;
+    margin: 15px;
+    color: white;
+}
+
+.content-left a:hover, .content-right a:hover
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#work1
+{
+    background-color: #324336;
+    color: white;
+}
+
+#work2
+{
+    background-color: #6FA2A0;
+    color:white;
+}
+
+#work3
+{
+    background-color: #273B46;
+    color: white;
+}
+
+#work4
+{
+    background-color: #8799A6;
+    color:white;
+}
+/* Worktab End*/
