@@ -221,25 +221,27 @@ iframe
 /*Work page detail*/
 .detail-wrap, .about-wrap
 {
-    margin: 50px;
+    margin: 0 15%;
 }
 
 .detail-wrap h1
 {
+    margin-top: 50px;
     font-size: 40px;
 }
 
 .detail-wrap h2
 {
     font-size: 25px;
-    margin: 30px 0px;
+    margin: 30px 0;
     padding-top: 35px;
 }
 
 .detail-wrap h3
 {
-    margin-top: -27px;
-    color: #EE5A26;
+    font-size: 22px;
+    margin-top: -25px;
+    color: #219E23;
 }
 
 .detail-wrap h4
@@ -288,8 +290,8 @@ iframe
 
 .detail-wrap li
 {
-    width: 75%;
-    font-size: 22px;
+    padding: 5px;
+    font-size: 20px;
     line-height: 25px;
     margin-left: 15px;
 }
@@ -388,6 +390,7 @@ iframe
 {
     background-color: white;
     margin: 0;
+    padding-bottom: 50px;
 }
 
 .red
