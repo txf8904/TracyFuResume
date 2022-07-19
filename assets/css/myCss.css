@@ -363,7 +363,7 @@ iframe
 {
     display: flex;
     flex-direction: row-reverse;
-    background-color: #2F393A;
+    background-color: #E4DFD4;
 }
 
 .featureimg
@@ -380,7 +380,7 @@ iframe
 {
     margin: 15%;
     margin-bottom: 15px;
-    color: white;
+    color: #219E23;
     font-size: 28px;
 }
 
@@ -388,7 +388,7 @@ iframe
 {
     margin: 15px 20%;
     font-size: 22px;
-    color: whitesmoke;
+    color: black;
 }
 
 
