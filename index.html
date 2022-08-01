@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <script src="assets/css/myjs.js"></script>
+</head>
+
 <body>
 
     <div class="header">
@@ -92,70 +95,7 @@
         </button>
     </div>
     
-    
-<!-- 
-    <button class="worktab" onclick="openPage('work1', this, '#324336')" id="defaultOpen">RKD Game</button>
-    <button class="worktab" onclick="openPage('work2', this, '#6FA2A0')">First-Gen Job</button>
-    <button class="worktab" onclick="openPage('work3', this, '#273B46')">3D Animation World</button>
-    <button class="worktab" onclick="openPage('work4', this, '#8799A6')">More</button>
-    
-
-    
-    <div id="work1" class="worktabcontent">
-        <div class="img-left">
-            <img src="assets/RKDImg/Overview.png">
-        </div>
-        <div class="content-left">
-            <h1>RKD Game</h1>
-            <p>
-                Review APP | UX/UI | Course Project
-            </p>
-            <a href="rkd.html"> View More</a>
-        </div>       
-    </div>
-      
-
-    <div id="work2" class="worktabcontent">
-        <div class="img-left">
-            <img src="assets/Job/Overview.png">
-        </div>
-        <div class="content-left">
-            <h1>First-Gen Job</h1>
-            <p>
-                Job Search Web | Web Design | Course Project
-            </p>
-            <a href="firstGenJob.html"> View More</a>
-        </div>  
-
-    </div>
-      
-    <div id="work3" class="worktabcontent">
-        <div class="content-right">
-            <h1>YHZ's 3D Animation World</h1>
-            <p>
-                Personal Website | Web Design | Freelancer
-            </p>
-            <a href="animationworld.html"> View More</a>
-        </div>
-
-        <div class="img-right">
-            <img src="assets/3DAnimation/overview.png">
-        </div>
-    </div>
-      
-    <div id="work4" class="worktabcontent">
-        <div class="content-right">
-            <h1>Other Works</h1>
-            <p>Game Design | Coding</p>
-            <a href="more.html"> View More</a>
-        </div>
-
-        <div class="img-right">
-            <img src="assets/img/AllYouCanEat.png">
-        </div>
-
-    </div> -->
-
+  
     <div class="about">
         <h2>Wanna Know More About Me?</h2>
         <p>
@@ -166,36 +106,12 @@
         </p>
     </div>
 
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+
     <div class="footer">
         <p>Last Updated: July 2022</p>
     </div>
-	
-<!--
-    <script>
-        function openPage(pageName, elmnt, color) {
-        // Hide all elements with class="tabcontent" by default */
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("worktabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
 
-        // Remove the background color of all tablinks/buttons
-        tablinks = document.getElementsByClassName("worktab");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-        }
-
-        // Show the specific tab content
-        document.getElementById(pageName).style.display = "block";
-
-        // Add the specific color to the button used to open the tab content
-        elmnt.style.backgroundColor = color;
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
--->
 </body>
 </html>

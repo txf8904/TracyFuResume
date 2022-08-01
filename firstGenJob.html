@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First-Gen Job Website</title>
     <link rel="stylesheet" type="text/css" href = "assets/css/myCss.css">
+    <script src="assets/css/myjs.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
@@ -22,6 +23,8 @@
           <a href="assets/Fu, Tracy UX Designer Resume.pdf">Resume</a>
         </div>
     </div>
+
+    
 
     <div class="bg">
         <img src="assets/Job/overview_laptop.png">
@@ -243,199 +246,14 @@
         </p>
     </div>
 
-
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
     <div class="footer">
         <p>Last Updated: July 2022</p>
     </div>
-
-    <!--
-        <div class="detail-wrap">
-        <h1>First-Gen Job</h1>
-        <h3>
-            Job Search Web | UX|UI Designer | Course Project
-        </h3>
-
-        <h2>Project Overview</h2>
-            <p>
-                First-gen Job is a job search tool to help first-generation immigrants. 
-                First-gen Job’s primary target users include people who are just come to the U.S. 
-                and have language embarrassment and people who came to the U.S. for a little while but 
-                still have difficulty assimilating into society.
-            </p>
-
-        <h2>Understanding the user</h2>
-            <h4>Problem:</h4>
-            <p>
-                The United States has a larger immigrant population, about 14.4% of the United States 
-                population are immigrants. Most immigrants came to the U.S. looking for a better life. 
-                However, there are many difficulties in their way of finding a job, such as a language or 
-                trade unfairly in the job place.
-            </p>
-
-            <h4>Solution:</h4>
-            <p>
-                Design an app that will help first-generation immigrants to find a job and help 
-                them to know if they are traded fairly in the workplace. 
-            </p>
-
-            <h4>Persona:</h4>
-            <p>
-                Milo is a college student of first-generation immigrants who needs to find a part-time job because she needs money for her college tuition and helps her parents in their store at the same time.            </p>
-            <img src="assets/Job/Persona1.png" alt="First-gen Job persona">
-
-        <h2>The Design</h2>
-            <h4>Wireframes:</h4>
-            <p>After brainstorming, I decided that the home page needs to have these elements: 
-                the logo, the search bar, navigation, user portfolio, the job recommendation area, 
-                the saved job area, the message icon, the notification icon, and the news and tips area.
-            </p>
-            <img src="assets/Job/paper wireframe.png" alt="paper wireframe">
-            <p>
-                <br>
-                After ideating and drafting some paper wireframes, I create the initial designs for the 
-                First-gen Job app. These designs focus on searching for jobs, getting to know the company, 
-                and knowing the salary to help get all the information that need for a job hunt.
-            </p>
-            <img src="assets/Job/digital wireframe.png" alt="digital wireframe">
-            <p>
-                <br>
-                The wireframes also include a home page without logging in or signing up and a process of 
-                signing up. In addition, it also has job search results, company pages, salaries page, 
-                and company search results.
-            </p>
-            <img src="assets/Job/wireframes_v1.gif" alt="digital wireframe for each page">
-
-            <h4><br>Sitemap:</h4>
-            <img src="assets/Job/Sitemap.png" alt="sitemap">
-
-            <h4><br><br>Low-fidelity Prototype:</h4>
-            <p>
-                 To prepare for usability testing, I create a low-fidelity prototype that connected the 
-                 user flow of creating an account, searching for a job, and getting to know the company 
-                 and salary.
-            </p>
-
-            <a href="https://www.figma.com/proto/nyJ8imnFMokVuo7bkRdElq/Job-Hunted?page-id=0%3A1&node-id=7%3A257&viewport=241%2C48%2C0.25&scaling=min-zoom&starting-point-node-id=7%3A257">View the RKD Game APP lo-fi here.</a>
-
-
-        <h2>Refining the design</h2>
-            <h4>Usability Study:</h4>
-            <p>
-                To better understand if the product meets users' needs, I conduct an usability 
-                study that has 6 participants of different gender aged 24 to 48 who are first-generation 
-                immigrants. Each section is about 30-50 minutes long. After watching and having a deep 
-                conversation with the participants, I realized a major mistake I had made.
-                <br><br>
-                In the previous research, the focus was on young generation immigrants who had gone to 
-                school in the United States, but there is a large percentage of first-generation immigrants 
-                who come to the U.S. in their mid-age and have more difficulty than the young generation.
-                <br><br>
-                After collecting and reviewing the feedback, I realized that a lot of first-generation 
-                immigrants have language problems, and they would like to work with people who have the 
-                same background as them.  Moreover, a lot of them focus on a job that does not require an 
-                educational background.Also, they also worried about if their employer will trade them 
-                equally because they do not fully understand the employment law in this new country.
-                <br><br>
-                Based on the feedback, I create another <span>persona</span> to rich out the user's character.<br>
-                Eiji is a new immigrant who needs to find a full-time job as a product manager because he needs to provide a quality lifestyle for his family.
-                <br>
-            </p>
-            <img src="assets/Job/Persona2.png" alt="second persona">
-            <p>
-                <br>
-                Next, I summarized the feedback into three insights.<br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Insights:</span>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                1. Sign Up Process: The users want an easy sign-up process and add detailed information later on by using a user profile.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                2. Search: The users want to add an advantage search that can limit the results.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                3. Salary and Company information: The users preferred to have more information related to salary and company.<br>
-                <br>
-            </p>
-            
-
-            <h4>Mockup:</h4>
-            <p>
-                Based on the insights from the usability studies, I applied design changes like a short 
-                and easy sign-up process and letting users add their detailed information, education, 
-                and work experience, to their user profile.<br>
-            </p>
-            <img src="assets/Job/chang1.png" alt="change #1">
-            <p>
-                <br>
-                Additional design changes included adding an advantage search by hovering the mouse to the arrow.
-                <br>
-            </p>
-            <img src="assets/Job/chang2.png" alt="change #2">
-            <p>
-                <br>
-                The full mockup is shown below:<br>
-            </p>
-            <img src="assets/Job/mockup.gif" alt="mockup">
-
-
-
-            <h4>High-fidelity Prototype:</h4>
-            <p>
-
-            </p>
-            <a href="https://www.figma.com/proto/nyJ8imnFMokVuo7bkRdElq/Job-Hunted?page-id=32%3A348&node-id=32%3A349&viewport=241%2C48%2C0.25&scaling=min-zoom&starting-point-node-id=32%3A349&show-proto-sidebar=1">View the RKD Game APP hi-fi here.</a>
-
-        <h2>Final</h2>
-            <h4>What I learned:</h4>
-            <p>
-                The participants of the initial user interview are all of the young generations which did 
-                not include the older generation. These two age ranges have very different user pain 
-                points which cause the first version did not solve the user pain points. This leads me 
-                to change a lot of detail in the project. Therefore, I learned that good user research is 
-                very important at the beginning. 
-            </p>
-
-            <h4>Next Step:</h4>
-            <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                1. Conduct a usability study for a hi-fi prototype.                
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                2. Add more educational resources for users to learn about new skills to get a job.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                3. Add employer site to post the jobs.<br>
-                <br>
-    </div>
-    -->
     
     
 </body>
 
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
+
 </html>

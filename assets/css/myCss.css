@@ -646,3 +646,25 @@ iframe
     color:white;
 }
 /* Worktab End*/
+
+#topBtn
+{
+    position: fixed;
+    bottom: 55px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #219E23;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#topBtn:hover
+{
+    background-color: #EE5A26;
+    color: white;
+}

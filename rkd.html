@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <script src="assets/css/myjs.js"></script>
 </head>
 <body>
     <div class="header">
@@ -256,142 +257,13 @@
         </p>
     </div>
 
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
 
     <div class="footer">
         <p>Last Updated: July 2022</p>
     </div>
-   
-
-
-
-
-        <!-- 
-
-        <h2>The Design</h2>
-            <h4>Wireframes:</h4>
-            <p>For the home screen, I realized that quick access to interesting games process helps users save
-                time. Meanwhile, the users also need to explore the newest/popular games.</p>
-                <img src="assets/RKDImg/Wireframes.png" alt="home page wireframes">
-            <p>Moreover,the wireframes include the ranking page, search/menu page, discover page, 
-                and game community/group page.</p>
-                <img src="assets/RKDImg/wireframes.gif" alt="wireframes">
-
-            <h4>Low-fidelity Prototype:</h4>
-            <p>
-                Based on the digital wireframes, the low-fidelity prototype has a primary user flow that finds a game 
-                review from different entry points in a quick and easy way. <br>
-            </p>
-
-            <a href="https://www.figma.com/file/q4rllV1I7oWCqyx5FOuqRj/Wireframes-for-game-review-app?node-id=0%3A1">View the RKD Game APP lo-fi here.</a>
-
-
-        <h2>Refining the design</h2>
-            <h4>Usability Study:</h4>
-            <p>
-                Since we are creating a new app, we need to find out if the main user experience, 
-                finding a game review, and connecting to a game community, are easy for users to complete.
-                <br><br> 
-                The usability study focuses on five questions:<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. How long does it take a user to find a game review?<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. What can we learn from the user flow to find a game review?<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Are there parts of the user flow where users get stuck?<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Are there more features that users would like to see included in the app?<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Do users think the app is easy or difficult?<br>
-                <br>
-                To solve these questions, I conducted an unmoderated usability study that has five participants involved with different gender and age gap.
-                After watching and talking with participants, I collected their options and summarized them into three insights.<br>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Insights:</span>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Search: Users need a way to find a game review more quickly without having to go through the Ranking or Discover<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Interface: Users need a more friendly interface to move smoothly in the app<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Game Community: Users need more connections with friends and others to have more fun outside of the game<br>
-                <br>
-                Based on the insights, I made following changes:
-                <br><br>
-                First, I added a quick search feature for the search function. It is not only allowed users
-                to find the hottest topic but also can help users to limit the result to what they are 
-                looking for.
-                <img src="assets/RKDImg/change1.png" alt="wireframe update 1"><br><br>
-                Also, the early design allowed users to use the search functions in a specific location. 
-                I added the search bar at the top of the screen, so the users can access it anytime. 
-                Moreover, change the navigation system from a pop-up menu to a fixed position.
-                <img src="assets/RKDImg/change2.png" alt="wireframe update 2">
-                Last, I refine the game community more clearly and add login/sign-up pages.
-                <img src="assets/RKDImg/change3.png" alt="wireframe update 3">
-                <img src="assets/RKDImg/change4.png" alt="wireframe update 4">
-
-            </p>
-
-            <h4>Mockup:</h4>
-            <p>
-                After making changes to the wireframes, I updated it into mockups.
-            </p>
-            <img src="assets/RKDImg/mockup.gif" alt="mockup">
-
-            <h4>High-fidelity Prototype:</h4>
-            <p>
-                The final high-fidelity prototype presented a cleaner user flow for finding and leaving a 
-                game review process. It also meets user needs for the portfolio page and connects with 
-                the game community and other players.
-            </p>
-            <a href="">View the RKD Game APP hi-fi here.</a>
-
-        <h2>Final</h2>
-            <h4>Summary:</h4>
-            <p>
-                RKD Game App is my first UX design project in my study journey. 
-                While designing the RKD Game App, I started to understand the process of a full UX 
-                design cycle. Along the way, I learned that the initial ideas for the app are just a start 
-                point. The final product is not what I as a designer want, it is about what users want 
-                and need.<br>
-                <br>
-                At the beginning of the design, I assumed that I was a user who doesn't really into arcade 
-                games but wants to find some new game. Therefore, as a new gamer, I assumed that users 
-                want to the app tell them what to play instead of helping them find what are they 
-                looking for.
-                Moreover, my initial research was off-topic a little bit, it is more focus on what 
-                kind of game reviews users want instead of what kind of features they are looking for 
-                in a game review app.<br>
-                <br>
-                As a result, the first usability study shows that a lot of participants can't 
-                find game reviews as they want because I ignored the importance of search.
-                In addition, I also learned that usability studies are the key element in the process through the design. 
-                <br><br>
-                It is an exciting and confusing process, but I eventually get over the difficulty and 
-                call it a success. 
-            </p>-->
     
 </body>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
 
 </html>
