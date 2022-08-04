@@ -330,14 +330,15 @@ iframe
 }
 .about-wrap h1
 {
-    font-size: 32px;
+    font-size: 40px;
     color:#219E23;
     padding: 12px;
 }
 
 .about-wrap h2
 {
-    font-size: 28px;
+    margin-top: 50px;
+    font-size: 30px;
     color:#EE5A26;
     padding: 12px;
 }
@@ -346,7 +347,7 @@ iframe
 {
     font-size: 25px;
     padding: 12px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .about-wrap span
