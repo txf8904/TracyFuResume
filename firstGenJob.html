@@ -14,7 +14,7 @@
 <body>
     <div class="header">
         <!--LOGO-->
-        <h1>Tracy F.</h1>
+        <h1><a href="index.html">Tracy F.</a></h1>
         
         <!--navgation-->
         <div class="header-right">
@@ -228,7 +228,8 @@
 
     <div class="detail-wrap">
        <h2>Prototype</h2>
-       <a href="https://www.figma.com/file/nyJ8imnFMokVuo7bkRdElq/Job-Hunted?node-id=32%3A348">
+       <a href="https://www.figma.com/proto/nyJ8imnFMokVuo7bkRdElq/Job-Hunted?page-id=32%3A348&node-id=32%3A349&viewport=-546%2C822%2C0.5&scaling=scale-down&starting-point-node-id=32%3A349"
+       target="_blank" rel="noopener noreferrer">
         View the live prototype here
        </a>
        
@@ -255,5 +256,32 @@
     
 </body>
 
-
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
 </html>

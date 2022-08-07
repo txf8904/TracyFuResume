@@ -11,14 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
     <script src="assets/css/myjs.js"></script>
 </head>
+
 <body>
     <div class="header">
         <!--LOGO-->
-        <h1>Tracy F.</h1>
+        <h1><a href="index.html">Tracy F.</a></h1>
         
         <!--navgation-->
         <div class="header-right">
-          <a class="active" href="index.html">Works</a>
+          <a href="index.html">Works</a>
           <a href="about.html">About</a>
           <a href="assets/Fu UX_Resume.pdf">Resume</a>
         </div>
@@ -224,7 +225,7 @@
 
     <div class="detail-wrap">
        <h2>Prototype</h2>
-       <a href="https://www.figma.com/file/23hCUdvGLdXe5ht4B4mOe6/Game-Review-Rewired?node-id=105%3A4">
+       <a href="https://www.figma.com/proto/23hCUdvGLdXe5ht4B4mOe6/Game-Review-Rewired?page-id=103%3A2&node-id=105%3A4&viewport=-591%2C1514%2C2&scaling=scale-down&starting-point-node-id=105%3A4&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer">
         View the live prototype here
        </a>
        
@@ -265,5 +266,33 @@
     </div>
     
 </body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
 
 </html>
